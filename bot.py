@@ -1,52 +1,73 @@
 from aiogram import Bot, Dispatcher, executor, types
-from aiogram.types import ReplyKeyboardMarkup, InlineKeyboardButton
+from config import TOKEN
+from aiogram.contrib.middlewares.logging import LoggingMiddleware
+from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from aiogram.dispatcher.filters.state import StatesGroup, State
+from aiogram.dispatcher import FSMContext
 
 
-API_TOKEN = '6536807460:AAG_D_j8DjFSaCK6GWGGIp_ceHXomT4THz0'
-bot = Bot(token=API_TOKEN)
-dp = Dispatcher(bot)
+class UserState(StatesGroup):
+    e_mail = State()
+    name = State()
+    last_name = State()
+    password = State()
 
-BUTTON_1 = 0
-BUTTON_2 = 0
+
+storage = MemoryStorage()
+bot = Bot(token=TOKEN)
+dp = Dispatcher(bot, storage=storage)
+dp.middleware.setup(LoggingMiddleware())
 
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    button1 = InlineKeyboardButton("Sign in")
-    button2 = InlineKeyboardButton("Create an account")
+    buttons = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+    register_btn = types.KeyboardButton("Create an account")
+    sign_in_btn = types.KeyboardButton("Sign in")
+    buttons.add(sign_in_btn, register_btn)
 
-    buttons = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(button1, button2)
-    await message.reply("Please select:", reply_markup=buttons)
-
-
-@dp.message_handler()
-async def answer(message: types.Message):  # анализируем ответ пользователя
-    global BUTTON_1
-    global BUTTON_2
-
-    if BUTTON_1 == 1:  # нажата первая кнопка
-        BUTTON_1 = 0
-        await message.answer("Button1")
-
-    elif BUTTON_2 == 1:  # нажата вторая кнопка
-        BUTTON_2 = 0
-        await message.answer("Button2")
+    await message.answer("Please select an action:", reply_markup=buttons)
 
 
-@dp.callback_query_handler(text='Sign in')
-async def process_callback_button1(callback_query: types.CallbackQuery):  # обработка нажатия второй кнопки
-    global BUTTON_2
-    BUTTON_2 = 1  # отмечаем, что была нажата первая кнопка
-    await bot.answer_callback_query(callback_query.id)
-    await bot.send_message(callback_query.from_user.id, 'Sign in')
+@dp.message_handler(lambda message: message.text and message.text == "Create an account")
+async def process_registration(message: types.Message):
+    await message.answer("For registration, please send your e-mail:")
+    await UserState.e_mail.set()
 
 
-@dp.callback_query_handler(text='Create an account')
-async def process_callback_button2(callback_query: types.CallbackQuery):  # обработка нажатия второй кнопки
-    global BUTTON_2
-    BUTTON_2 = 1  # отмечаем, что была нажата первая кнопка
-    await bot.answer_callback_query(callback_query.id)
-    await bot.send_message(callback_query.from_user.id, 'Create')
+@dp.message_handler(state=UserState.e_mail)
+async def process_email(message: types.Message, state: FSMContext):
+    await state.update_data(e_mail=message.text)
+    await message.answer("Ok, now send your name:")
+    await UserState.name.set()
+
+
+@dp.message_handler(state=UserState.name)
+async def process_name(message: types.Message, state: FSMContext):
+    await state.update_data(name=message.text)
+    await message.answer("Your last name:")
+    await UserState.last_name.set()
+
+
+@dp.message_handler(state=UserState.last_name)
+async def process_last_name(message: types.Message, state: FSMContext):
+    await state.update_data(last_name=message.text)
+    await message.answer("And your password:")
+    await UserState.password.set()
+
+
+@dp.message_handler(state=UserState.password)
+async def get_password(message: types.Message, state: FSMContext):
+    await state.update_data(password=message.text)
+    data = await state.get_data()
+    await message.answer(f"Your data:\n"
+                         f"E-mail: {data['e_mail']}\n"
+                         f"Name: {data['name']}\n"
+                         f"Last name: {data['last_name']}\n"
+                         f"Password: {data['password']}\n"
+                         f"Account was created successfully")
+
+    await state.finish()
 
 
 if __name__ == '__main__':
