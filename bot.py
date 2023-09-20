@@ -4,12 +4,16 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 from config import TOKEN
 from utils import RegisterState, SigninState
+from database import Database, Reg
+from datetime import datetime
 
 
 storage = MemoryStorage()
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot, storage=storage)
 dp.middleware.setup(LoggingMiddleware())
+
+db = Database()
 
 
 @dp.message_handler(commands=['start'])
@@ -40,14 +44,21 @@ async def get_login(message: types.Message, state: FSMContext):
 
 @dp.message_handler(lambda message: message.text and message.text == "Create an account")
 async def registration(message: types.Message):
-    await message.answer("For registration, please send your e-mail:")
+    await message.answer("For registration, please send your login:")
+    await RegisterState.login.set()
+
+
+@dp.message_handler(state=RegisterState.login)
+async def get_email(message: types.Message, state: FSMContext):
+    await state.update_data(login=message.text)
+    await message.answer("Ok, now send your e-mail:")
     await RegisterState.e_mail.set()
 
 
 @dp.message_handler(state=RegisterState.e_mail)
 async def get_email(message: types.Message, state: FSMContext):
     await state.update_data(e_mail=message.text)
-    await message.answer("Ok, now send your name:")
+    await message.answer("Send your name:")
     await RegisterState.name.set()
 
 
@@ -62,19 +73,16 @@ async def get_name(message: types.Message, state: FSMContext):
 async def get_last_name(message: types.Message, state: FSMContext):
     await state.update_data(last_name=message.text)
     await message.answer("And your password:")
-    await RegisterState.password.set()
+    await RegisterState.create_acc.set()
 
 
-@dp.message_handler(state=RegisterState.password)
-async def get_password(message: types.Message, state: FSMContext):
+@dp.message_handler(state=RegisterState.create_acc)
+async def create_acc(message: types.Message, state: FSMContext):
     await state.update_data(password=message.text)
     data = await state.get_data()
-    await message.answer(f"Your data:\n"
-                         f"E-mail: {data['e_mail']}\n"
-                         f"Name: {data['name']}\n"
-                         f"Last name: {data['last_name']}\n"
-                         f"Password: {data['password']}\n"
-                         f"Account was created successfully")
+    db.add_reg_info(Reg(username=data['login'], password=data['password'], registration_time=datetime.now()))
+    await message.answer(f"Account {data['login']} "
+                         f"was created successfully")
 
     await state.finish()
 

@@ -28,7 +28,6 @@ class Database:
         self.url = DATABASE_URL
         self.engine = create_engine(self.url, echo=True)
 
-    def create(self):
         if not database_exists(self.url):
             create_database(self.url)
 
@@ -46,19 +45,16 @@ class Database:
                            )
         metadata.create_all(self.engine)
 
-    def add(self, news_list):
-        self.create()
+    def add_reg_info(self, data):
         Session = sessionmaker(bind=self.engine)
         session = Session()
-        for new in news_list:
-            if session.query(exists().where(New.title == new.title)).scalar() is False:
-                session.add(new)
+        session.add(data)
         session.commit()
         session.close()
 
-    def get(self, new_id):
+    def get_reg_info(self, data):
         Session = sessionmaker(bind=self.engine)
         session = Session()
-        res = session.query(New).filter_by(id=new_id).first()
+        res = session.query(Reg).filter_by(username=data).first()
         session.close()
         return res
