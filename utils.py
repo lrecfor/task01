@@ -10,4 +10,4 @@ class RegisterState(StatesGroup):
 
 
 class SigninState(StatesGroup):
-    login = State()
+    sign_in = State()

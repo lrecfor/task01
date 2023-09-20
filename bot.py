@@ -6,6 +6,7 @@ from config import TOKEN
 from utils import RegisterState, SigninState
 from database import Database, Reg
 from datetime import datetime
+import hashlib
 
 
 storage = MemoryStorage()
@@ -28,17 +29,20 @@ async def start(message: types.Message):
 
 @dp.message_handler(lambda message: message.text and message.text == "Sign in")
 async def authorisation(message: types.Message):
-    await message.answer("For authorisation, please send your e-mail or login:")
-    await SigninState.login.set()
+    await message.answer("For authorisation, please send your login:")
+    await SigninState.sign_in.set()
 
 
-@dp.message_handler(state=SigninState.login)
-async def get_login(message: types.Message, state: FSMContext):
+@dp.message_handler(state=SigninState.sign_in)
+async def sign_in(message: types.Message, state: FSMContext):
     await state.update_data(login=message.text)
     data = await state.get_data()
-    print(data)
-    await message.answer("Account was found. You sign in successfully.")
-
+    login = db.get_reg_info(data["login"])
+    if login is None:
+        await message.answer("Account was not found. Please, try again or create an account.")
+    else:
+        # sign in
+        await message.answer("Account was found. You sign in successfully.")
     await state.finish()
 
 
@@ -49,7 +53,7 @@ async def registration(message: types.Message):
 
 
 @dp.message_handler(state=RegisterState.login)
-async def get_email(message: types.Message, state: FSMContext):
+async def get_login(message: types.Message, state: FSMContext):
     await state.update_data(login=message.text)
     await message.answer("Ok, now send your e-mail:")
     await RegisterState.e_mail.set()
@@ -80,10 +84,14 @@ async def get_last_name(message: types.Message, state: FSMContext):
 async def create_acc(message: types.Message, state: FSMContext):
     await state.update_data(password=message.text)
     data = await state.get_data()
-    db.add_reg_info(Reg(username=data['login'], password=data['password'], registration_time=datetime.now()))
-    await message.answer(f"Account {data['login']} "
-                         f"was created successfully")
-
+    login = db.get_reg_info(data["login"])
+    if login is not None:
+        await message.answer("User with this login is already exist. Please, use another login or sign in.")
+    else:
+        # create account
+        password = hashlib.sha512(data['password'].encode()).hexdigest()
+        db.add_reg_info(Reg(username=data['login'], password=password, registration_time=datetime.now()))
+        await message.answer(f"Account {data['login']} was created successfully")
     await state.finish()
 
 

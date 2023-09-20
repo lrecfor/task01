@@ -56,5 +56,9 @@ class Database:
         Session = sessionmaker(bind=self.engine)
         session = Session()
         res = session.query(Reg).filter_by(username=data).first()
-        session.close()
+        if res:
+            session.close()
+        else:
+            res = None
         return res
+
