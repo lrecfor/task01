@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
-from sqlalchemy import MetaData, Table, Column, Integer, String
+from sqlalchemy import MetaData, Table, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import sessionmaker, declarative_base
-from sqlalchemy.sql import exists
+from sqlalchemy.orm import relationship
 from config import DATABASE_URL
 
 base = declarative_base()
@@ -10,7 +10,7 @@ base = declarative_base()
 
 class Reg(base):
     __tablename__ = "reg_info"
-    id = Column(Integer(), primary_key=True)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
     username = Column(String(), nullable=False)
     password = Column(String(), nullable=False)
     registration_time = Column(String(), nullable=False)
@@ -18,8 +18,8 @@ class Reg(base):
 
 class Auth(base):
     __tablename__ = "auth_info"
-    id = Column(Integer(), primary_key=True)
-    user_id = Column(Integer(), nullable=False)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
+    user_id = Column(Integer(), ForeignKey("reg_info.id"), primary_key=True)
     authorization_time = Column(String(), nullable=False)
 
 
