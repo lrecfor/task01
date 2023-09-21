@@ -45,14 +45,14 @@ class Database:
                            )
         metadata.create_all(self.engine)
 
-    def add_reg_info(self, data):
+    def add(self, data):
         Session = sessionmaker(bind=self.engine)
         session = Session()
         session.add(data)
         session.commit()
         session.close()
 
-    def get_reg_info(self, data):
+    def get(self, data):
         Session = sessionmaker(bind=self.engine)
         session = Session()
         res = session.query(Reg).filter_by(username=data).first()
@@ -61,4 +61,3 @@ class Database:
         else:
             res = None
         return res
-
