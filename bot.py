@@ -2,16 +2,14 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
-from config import TOKEN
-from utils import RegisterState, SigninState
+from config import TOKEN, KEY
+from utils import RegisterState, SigninState, connect_driver
 from database import Database, Reg, Auth
 from datetime import datetime
 from cryptography.fernet import Fernet
+import time
 
-# generate a key
-key = Fernet.generate_key()
-# create a Fernet instance with the key
-fernet = Fernet(key)
+fernet = Fernet(KEY)
 
 storage = MemoryStorage()
 bot = Bot(token=TOKEN)
@@ -47,10 +45,16 @@ async def sign_in(message: types.Message, state: FSMContext):
         await message.answer("Account was not found. Please, try again or create an account.")
     else:
         # sign in
-        password = fernet.decrypt(user_data.password).decode('utf-8')
         login = user_data.username
-        await message.answer("Account was found. You sign in successfully.")
+        password = fernet.decrypt(user_data.password).decode('utf-8')
+        driver = connect_driver()
+        driver.find_element("xpath", '//*[@id="id_login"]').send_keys(login)
+        driver.find_element("xpath", '//*[@id="id_password"]').send_keys(password)
+        driver.find_element("xpath", '/html/body/div[1]/main/div/div[2]/div/form/input[5]').click()
+        driver.close()
+
         db.add(Auth(user_id=user_data.id, authorization_time=datetime.now()))
+        await message.answer("Account was found. You sign in successfully.")
     await state.finish()
 
 
@@ -62,22 +66,22 @@ async def registration(message: types.Message):
 
 
 @dp.message_handler(state=RegisterState.login)  # get login from user
-async def get_login(message: types.Message, state: FSMContext):
-    await state.update_data(login=message.text)
+async def get_username(message: types.Message, state: FSMContext):
+    await state.update_data(username=message.text)
     await message.answer("Ok, now send your e-mail:")
     await RegisterState.e_mail.set()
 
 
 @dp.message_handler(state=RegisterState.e_mail)  # get e-mail from user
 async def get_email(message: types.Message, state: FSMContext):
-    await state.update_data(e_mail=message.text)
+    await state.update_data(email=message.text)
     await message.answer("Send your name:")
-    await RegisterState.name.set()
+    await RegisterState.first_name.set()
 
 
-@dp.message_handler(state=RegisterState.name)  # get name from user
-async def get_name(message: types.Message, state: FSMContext):
-    await state.update_data(name=message.text)
+@dp.message_handler(state=RegisterState.first_name)  # get name from user
+async def get_first_name(message: types.Message, state: FSMContext):
+    await state.update_data(first_name=message.text)
     await message.answer("Your last name:")
     await RegisterState.last_name.set()
 
@@ -91,15 +95,25 @@ async def get_last_name(message: types.Message, state: FSMContext):
 
 @dp.message_handler(state=RegisterState.create_acc)  # func to create account
 async def create_acc(message: types.Message, state: FSMContext):
-    await state.update_data(password=message.text)
+    await state.update_data(password1=message.text)
+    await state.update_data(password2=message.text)
     data = await state.get_data()
-    login = db.get(data["login"])
-    if login is not None:
+    if db.get(data["username"]) is not None:
         await message.answer("User with this login is already exist. Please, use another login or sign in.")
     else:
         # create account
-        password = fernet.encrypt(data["password"].encode('utf-8')).decode('utf-8')
-        db.add(Reg(username=data['login'], password=password, registration_time=datetime.now()))
+        driver = connect_driver()
+        driver.find_element("xpath", "/html/body/div[1]/main/div/div[2]/div/form/a").click()
+        time.sleep(1)
+        input_fields = driver.find_elements("class name", 'form-control')
+        for field in input_fields:
+            field_value = data.get(field.get_attribute('name'))
+            field.send_keys(field_value)
+        driver.find_element("xpath", '/html/body/div/main/div/div[2]/div/form/input[3]').click()
+        driver.close()
+
+        password = fernet.encrypt(data["password1"].encode('utf-8')).decode('utf-8')
+        db.add(Reg(username=data['username'], password=password, registration_time=datetime.now()))
         await message.answer(f"Account {data['login']} was created successfully")
     await state.finish()
 
