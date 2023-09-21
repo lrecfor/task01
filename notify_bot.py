@@ -1,16 +1,11 @@
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.dispatcher import FSMContext
 from config import N_TOKEN, DATABASE_URL
-from utils import RegisterState, SigninState
 from database import Database, Reg, Auth
-from datetime import datetime
 from sqlalchemy import create_engine
-from sqlalchemy_utils import database_exists, create_database
-from sqlalchemy import MetaData, Table, Column, Integer, String
-from sqlalchemy.orm import sessionmaker, declarative_base
-from sqlalchemy import select, cast
+from sqlalchemy import Integer, cast
+from sqlalchemy.orm import sessionmaker
 
 storage = MemoryStorage()
 bot = Bot(token=N_TOKEN)

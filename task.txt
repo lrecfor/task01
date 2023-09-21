@@ -14,8 +14,8 @@
 #
 #
 # Добавить телеграм-бота который будет оповещать о
-# регистрации нового юзера сообщением с id, username и registration_time
-# и авторизации сообщением с user_id, username, authorization_time
+# регистрации нового юзера сообщением с id, username и registration_time    +
+# и авторизации сообщением с user_id, username, authorization_time  +
 #
 # Дополнительно:
 # Добавить комментарии в код

@@ -6,7 +6,12 @@ from config import TOKEN
 from utils import RegisterState, SigninState
 from database import Database, Reg, Auth
 from datetime import datetime
-import hashlib
+from cryptography.fernet import Fernet
+
+# generate a key
+key = Fernet.generate_key()
+# create a Fernet instance with the key
+fernet = Fernet(key)
 
 storage = MemoryStorage()
 bot = Bot(token=TOKEN)
@@ -42,6 +47,8 @@ async def sign_in(message: types.Message, state: FSMContext):
         await message.answer("Account was not found. Please, try again or create an account.")
     else:
         # sign in
+        password = fernet.decrypt(user_data.password).decode('utf-8')
+        login = user_data.username
         await message.answer("Account was found. You sign in successfully.")
         db.add(Auth(user_id=user_data.id, authorization_time=datetime.now()))
     await state.finish()
@@ -91,7 +98,7 @@ async def create_acc(message: types.Message, state: FSMContext):
         await message.answer("User with this login is already exist. Please, use another login or sign in.")
     else:
         # create account
-        password = hashlib.sha512(data['password'].encode()).hexdigest()
+        password = fernet.encrypt(data["password"].encode('utf-8')).decode('utf-8')
         db.add(Reg(username=data['login'], password=password, registration_time=datetime.now()))
         await message.answer(f"Account {data['login']} was created successfully")
     await state.finish()

@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy import MetaData, Table, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import sessionmaker, declarative_base
-from sqlalchemy.orm import relationship
 from config import DATABASE_URL
 
 base = declarative_base()
