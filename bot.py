@@ -42,23 +42,29 @@ async def authorisation(message: types.Message):
 
 @dp.message_handler(state=SigninState.sign_in)  # func to sign in
 async def sign_in(message: types.Message, state: FSMContext):
-    await state.update_data(login=message.text)
+    await state.update_data(username=message.text)
     data = await state.get_data()
-    user_data = db.get(data["login"])
-    if user_data is None:
-        await message.answer("Account was not found. Please, try again or create an account.")
-    else:
-        # sign in
-        login = user_data.username
-        password = fernet.decrypt(user_data.password).decode('utf-8')
-        driver = connect_driver()
-        driver.find_element("xpath", '//*[@id="id_login"]').send_keys(login)
-        driver.find_element("xpath", '//*[@id="id_password"]').send_keys(password)
-        driver.find_element("xpath", '/html/body/div[1]/main/div/div[2]/div/form/input[5]').click()
-        driver.close()
+    user_data = db.get(data["username"])
+    username = user_data.username
+    password = fernet.decrypt(user_data.password).decode('utf-8')
+    driver = connect_driver()
 
+    # field filling
+    driver.find_element("xpath", '//*[@id="id_login"]').send_keys(username)
+    driver.find_element("xpath", '//*[@id="id_password"]').send_keys(password)
+    # submit button clicking
+    driver.find_element("xpath", '/html/body/div[1]/main/div/div[2]/div/form/input[5]').click()
+
+    # error checking
+    try:
+        if (driver.find_element("xpath", '/html/body/div/main/div/div[2]/div/form/small').text ==
+                "Проверьте правильность написания логина и пароля"):
+            driver.close()
+            await message.answer("Account was not found. Check your login and try again or create an account.")
+    except NoSuchElementException:  # no errors
+        driver.close()
         db.add(Auth(user_id=user_data.id, authorization_time=datetime.now()))
-        await message.answer("Account was found. You sign in successfully.")
+        await message.answer("You signed in successfully.")
     await state.finish()
 
 
@@ -102,9 +108,6 @@ async def create_acc(message: types.Message, state: FSMContext):
     await state.update_data(password1=message.text)
     await state.update_data(password2=message.text)
     data = await state.get_data()
-    # if db.get(data["username"]) is not None:
-    #     await message.answer("User with this login is already exist. Please, use another login or sign in.")
-    # else:
 
     # account creation
     driver = connect_driver()
@@ -119,7 +122,7 @@ async def create_acc(message: types.Message, state: FSMContext):
     # submit button search
     driver.find_element("xpath", '/html/body/div/main/div/div[2]/div/form/input[3]').click()
 
-    # check error checking
+    # error checking
     try:
         error_text = ""
         if (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
