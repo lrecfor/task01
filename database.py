@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy import MetaData, Table, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import sessionmaker, declarative_base
-from config import DATABASE_URL
+import config
 
 base = declarative_base()
 
@@ -24,7 +24,7 @@ class Auth(base):
 
 class Database:
     def __init__(self):
-        self.url = DATABASE_URL
+        self.url = config.DATABASE_URL
         self.engine = create_engine(self.url, echo=True)
 
         if not database_exists(self.url):

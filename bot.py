@@ -2,24 +2,28 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
-from config import TOKEN, KEY
+from selenium.common import NoSuchElementException
+
+import config
 from utils import RegisterState, SigninState, connect_driver
 from database import Database, Reg, Auth
 from datetime import datetime
 from cryptography.fernet import Fernet
 import time
+import logging
 
-fernet = Fernet(KEY)
+fernet = Fernet(config.KEY)
 
 storage = MemoryStorage()
-bot = Bot(token=TOKEN)
+bot = Bot(token=config.TOKEN)
 dp = Dispatcher(bot, storage=storage)
+# logging.basicConfig(level=logging.ERROR)
 dp.middleware.setup(LoggingMiddleware())
 
 db = Database()
 
 
-@dp.message_handler(commands=['start'])
+@dp.message_handler(commands=['start'])  # start command handling, button output
 async def start(message: types.Message):
     buttons = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     register_btn = types.KeyboardButton("Create an account")
@@ -98,23 +102,47 @@ async def create_acc(message: types.Message, state: FSMContext):
     await state.update_data(password1=message.text)
     await state.update_data(password2=message.text)
     data = await state.get_data()
-    if db.get(data["username"]) is not None:
-        await message.answer("User with this login is already exist. Please, use another login or sign in.")
-    else:
-        # create account
-        driver = connect_driver()
-        driver.find_element("xpath", "/html/body/div[1]/main/div/div[2]/div/form/a").click()
-        time.sleep(1)
-        input_fields = driver.find_elements("class name", 'form-control')
-        for field in input_fields:
-            field_value = data.get(field.get_attribute('name'))
-            field.send_keys(field_value)
-        driver.find_element("xpath", '/html/body/div/main/div/div[2]/div/form/input[3]').click()
-        driver.close()
+    # if db.get(data["username"]) is not None:
+    #     await message.answer("User with this login is already exist. Please, use another login or sign in.")
+    # else:
 
+    # account creation
+    driver = connect_driver()
+    # registration button search
+    driver.find_element("xpath", "/html/body/div[1]/main/div/div[2]/div/form/a").click()
+    time.sleep(1)
+    # field search and input data
+    input_fields = driver.find_elements("class name", 'form-control')
+    for field in input_fields:
+        field_value = data.get(field.get_attribute('name'))
+        field.send_keys(field_value)
+    # submit button search
+    driver.find_element("xpath", '/html/body/div/main/div/div[2]/div/form/input[3]').click()
+
+    # check error checking
+    try:
+        error_text = ""
+        if (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+                "Пользователь с таким логином уже существует"):
+            error_text = f"Account {data['username']} already exists. Please, use another login or sign in."
+        elif (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+              "Пользователь с такой почтой уже существует"):
+            error_text = f"Account with e-mail {data['email']} already exists. Please, use another e-mail or sign in."
+        elif (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+              "Введите правильный адрес электронной почты"):
+            error_text = f"Incorrect e-mail {data['email']}"
+        elif (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+              "Пароль должен быть больше 5 символов"):
+            error_text = f"Password should be more than 5 characters"
+
+        driver.close()
+        await message.answer(error_text)
+    except NoSuchElementException:  # account was created without errors
+        driver.close()
         password = fernet.encrypt(data["password1"].encode('utf-8')).decode('utf-8')
         db.add(Reg(username=data['username'], password=password, registration_time=datetime.now()))
-        await message.answer(f"Account {data['login']} was created successfully")
+        await message.answer(f"Account {data['username']} was created successfully")
+
     await state.finish()
 
 
