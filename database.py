@@ -31,12 +31,15 @@ class Database:
             create_database(self.url)
 
         metadata = MetaData()
+        # table for registration info
         reg_table = Table('reg_info', metadata,
                           Column('id', Integer(), primary_key=True),
                           Column('username', String(), nullable=False),
                           Column('password', String(), nullable=False),
                           Column('registration_time', String(), nullable=False)
                           )
+
+        # table for authentication info
         auth_table = Table('auth_info', metadata,
                            Column('id', Integer(), primary_key=True),
                            Column('user_id', String(), nullable=False),

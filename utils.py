@@ -3,6 +3,7 @@ from selenium import webdriver
 import time
 
 
+# classes for FSM
 class RegisterState(StatesGroup):
     login = State()
     e_mail = State()
@@ -15,6 +16,7 @@ class SigninState(StatesGroup):
     sign_in = State()
 
 
+# func to connect to driver and open cappa.csu.ru
 def connect_driver():
     driver = webdriver.Firefox()
     driver.get("http://cappa.csu.ru/")

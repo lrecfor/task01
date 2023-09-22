@@ -3,27 +3,27 @@ from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 from selenium.common import NoSuchElementException
-
-import config
 from utils import RegisterState, SigninState, connect_driver
 from database import Database, Reg, Auth
 from datetime import datetime
 from cryptography.fernet import Fernet
 import time
 import logging
+import config
 
 fernet = Fernet(config.KEY)
 
 storage = MemoryStorage()
 bot = Bot(token=config.TOKEN)
 dp = Dispatcher(bot, storage=storage)
-# logging.basicConfig(level=logging.ERROR)
+logging.basicConfig(level=logging.ERROR)
 dp.middleware.setup(LoggingMiddleware())
 
 db = Database()
 
 
-@dp.message_handler(commands=['start'])  # start command handling, button output
+# start command handling, button output
+@dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     buttons = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     register_btn = types.KeyboardButton("Create an account")
@@ -40,6 +40,7 @@ async def authorisation(message: types.Message):
     await SigninState.sign_in.set()
 
 
+# func to sign in
 @dp.message_handler(state=SigninState.sign_in)  # func to sign in
 async def sign_in(message: types.Message, state: FSMContext):
     await state.update_data(username=message.text)
@@ -75,35 +76,40 @@ async def registration(message: types.Message):
     await RegisterState.login.set()
 
 
-@dp.message_handler(state=RegisterState.login)  # get login from user
+# get login from user
+@dp.message_handler(state=RegisterState.login)
 async def get_username(message: types.Message, state: FSMContext):
     await state.update_data(username=message.text)
     await message.answer("Ok, now send your e-mail:")
     await RegisterState.e_mail.set()
 
 
-@dp.message_handler(state=RegisterState.e_mail)  # get e-mail from user
+# get e-mail from user
+@dp.message_handler(state=RegisterState.e_mail)
 async def get_email(message: types.Message, state: FSMContext):
     await state.update_data(email=message.text)
     await message.answer("Send your name:")
     await RegisterState.first_name.set()
 
 
-@dp.message_handler(state=RegisterState.first_name)  # get name from user
+# get name from user
+@dp.message_handler(state=RegisterState.first_name)
 async def get_first_name(message: types.Message, state: FSMContext):
     await state.update_data(first_name=message.text)
     await message.answer("Your last name:")
     await RegisterState.last_name.set()
 
 
-@dp.message_handler(state=RegisterState.last_name)  # get last name from user
+# get last name from user
+@dp.message_handler(state=RegisterState.last_name)
 async def get_last_name(message: types.Message, state: FSMContext):
     await state.update_data(last_name=message.text)
     await message.answer("And your password:")
     await RegisterState.create_acc.set()
 
 
-@dp.message_handler(state=RegisterState.create_acc)  # func to create account
+# func to create account
+@dp.message_handler(state=RegisterState.create_acc)
 async def create_acc(message: types.Message, state: FSMContext):
     await state.update_data(password1=message.text)
     await state.update_data(password2=message.text)
