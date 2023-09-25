@@ -1,0 +1,1347 @@
+1695292064579	geckodriver	INFO	Listening on 127.0.0.1:57888
+1695292067634	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 89" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileBe9omV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292068812	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292068931	Marionette	INFO	Listening on port 57914
+WebDriver BiDi listening on ws://127.0.0.1:57889
+Read port: 57914
+1695292069271	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57889/devtools/browser/122d3bdc-c37a-4c1f-a0a9-9ebf90e0dfb4
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH, line 139: Script terminated by timeout at:
+l@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:139:17
+Cz@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:134
+Dz/<@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:111
+
+1695292076701	Marionette	INFO	Stopped listening on port 57914
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1695292181132	geckodriver	INFO	Listening on 127.0.0.1:58027
+1695292184168	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 28" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileGfBjpM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292184683	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292184807	Marionette	INFO	Listening on port 58037
+WebDriver BiDi listening on ws://127.0.0.1:58028
+Read port: 58037
+1695292185073	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58028/devtools/browser/1fc87a46-915c-4e1c-8fae-f08bdd4a2067
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH, line 139: Script terminated by timeout at:
+l@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:139:17
+Cz@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:134
+Dz/<@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:111
+
+1695292272357	Marionette	INFO	Stopped listening on port 58037
+Dynamically enable window occlusion 1
+1695292330573	geckodriver	INFO	Listening on 127.0.0.1:58124
+1695292333641	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 25" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileCDch6X"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292334159	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292334286	Marionette	INFO	Listening on port 58132
+WebDriver BiDi listening on ws://127.0.0.1:58125
+Read port: 58132
+1695292334396	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58125/devtools/browser/c0d09e2c-77e1-42e1-811e-45d4346bc093
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.python.org."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH, line 139: Script terminated by timeout at:
+l@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:139:17
+Cz@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:134
+Dz/<@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:111
+
+1695292358668	Marionette	INFO	Stopped listening on port 58132
+Dynamically enable window occlusion 1
+1695292460866	geckodriver	INFO	Listening on 127.0.0.1:58254
+1695292463932	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 55" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilet64NO6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292464449	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292464570	Marionette	INFO	Listening on port 58263
+WebDriver BiDi listening on ws://127.0.0.1:58255
+Read port: 58263
+1695292464839	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58255/devtools/browser/b19338a3-71f0-4bca-9505-ca1e9b4b435c
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.python.org."
+1695292468977	Marionette	INFO	Stopped listening on port 58263
+Dynamically enable window occlusion 1
+1695292476441	geckodriver	INFO	Listening on 127.0.0.1:58310
+1695292479505	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 11" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileme4Zpc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292480008	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292480129	Marionette	INFO	Listening on port 58320
+WebDriver BiDi listening on ws://127.0.0.1:58311
+Read port: 58320
+1695292480404	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58311/devtools/browser/46a97619-642e-42fe-a9be-2028b78f9bd8
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.python.org."
+1695292484847	Marionette	INFO	Stopped listening on port 58320
+Dynamically enable window occlusion 1
+1695292497516	geckodriver	INFO	Listening on 127.0.0.1:58365
+1695292500584	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 66" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileKun94V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292501128	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292501245	Marionette	INFO	Listening on port 58373
+WebDriver BiDi listening on ws://127.0.0.1:58366
+Read port: 58373
+1695292501596	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58366/devtools/browser/d961223a-886e-4c54-9329-5bddebc5ba38
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.python.org."
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH, line 139: Script terminated by timeout at:
+l@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:139:17
+Cz@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:134
+Dz/<@https://www.googletagmanager.com/gtag/js?id=G-TF35YF9CVH:440:111
+
+1695292512375	Marionette	INFO	Stopped listening on port 58373
+Dynamically enable window occlusion 1
+1695292648673	geckodriver	INFO	Listening on 127.0.0.1:58508
+1695292651719	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 09" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilew7cJNi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292652388	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292652513	Marionette	INFO	Listening on port 58519
+WebDriver BiDi listening on ws://127.0.0.1:58509
+Read port: 58519
+1695292652777	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58509/devtools/browser/69169030-93ac-4581-b4db-b98461fe89b1
+1695292670460	Marionette	INFO	Stopped listening on port 58519
+Dynamically enable window occlusion 1
+1695292681435	geckodriver	INFO	Listening on 127.0.0.1:58577
+1695292684495	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 78" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileuLtZfH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695292685040	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695292685169	Marionette	INFO	Listening on port 58588
+Read port: 58588
+WebDriver BiDi listening on ws://127.0.0.1:58578
+1695292685274	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58578/devtools/browser/76ed3b86-c64c-4ff2-9e08-886335cc430d
+1695293072600	Marionette	INFO	Stopped listening on port 58588
+Dynamically enable window occlusion 1
+ng command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 06" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilefKIkEF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293059165	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293059283	Marionette	INFO	Listening on port 59022
+WebDriver BiDi listening on ws://127.0.0.1:59006
+Read port: 59022
+1695293059604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59006/devtools/browser/57a298ae-88e6-45b9-bb95-2e36c856e2f0
+1695293485378	Marionette	INFO	Stopped listening on port 59022
+Dynamically enable window occlusion 1
+ng command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 02" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileOMqw2s"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293479739	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293479858	Marionette	INFO	Listening on port 59414
+WebDriver BiDi listening on ws://127.0.0.1:59402
+Read port: 59414
+1695293480212	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59402/devtools/browser/0dade77e-b779-416f-bba3-a96eb1735f63
+1695293490765	Marionette	INFO	Stopped listening on port 59414
+Dynamically enable window occlusion 1
+1695293539400	geckodriver	INFO	Listening on 127.0.0.1:59496
+1695293542436	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 97" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilerEXip6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293543064	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293543185	Marionette	INFO	Listening on port 59510
+WebDriver BiDi listening on ws://127.0.0.1:59497
+Read port: 59510
+1695293543294	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59497/devtools/browser/3a35e04a-6bae-4feb-93e3-e922c1544d0c
+1695293552382	Marionette	INFO	Stopped listening on port 59510
+Dynamically enable window occlusion 1
+1695293634765	geckodriver	INFO	Listening on 127.0.0.1:59641
+1695293637840	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 42" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileAv2oag"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293638374	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293638497	Marionette	INFO	Listening on port 59653
+Read port: 59653
+WebDriver BiDi listening on ws://127.0.0.1:59642
+1695293638611	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59642/devtools/browser/f95b7a65-a735-45a2-a643-49c562e0a794
+1695293675318	Marionette	INFO	Stopped listening on port 59653
+Dynamically enable window occlusion 1
+console.error: (new Error("IndexedDB: main/quicksuggest getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1695293679628	geckodriver	INFO	Listening on 127.0.0.1:59730
+1695293682688	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 31" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilemOyHP4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293683241	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293683374	Marionette	INFO	Listening on port 59741
+WebDriver BiDi listening on ws://127.0.0.1:59731
+Read port: 59741
+1695293683816	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59731/devtools/browser/e6543f27-abc7-473b-a362-69e38a7ecbff
+1695293747098	Marionette	INFO	Stopped listening on port 59741
+Dynamically enable window occlusion 1
+ng command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 39" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilefB35Bu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293746402	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293746543	Marionette	INFO	Listening on port 59856
+WebDriver BiDi listening on ws://127.0.0.1:59839
+Read port: 59856
+1695293746802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59839/devtools/browser/9ca46aad-17a8-473f-9c58-e187543bdb5e
+1695293759529	Marionette	INFO	Stopped listening on port 59856
+Dynamically enable window occlusion 1
+1695293820117	geckodriver	INFO	Listening on 127.0.0.1:59943
+1695293823167	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 44" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileBRX3YR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293823713	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293823833	Marionette	INFO	Listening on port 59952
+WebDriver BiDi listening on ws://127.0.0.1:59944
+Read port: 59952
+1695293824179	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59944/devtools/browser/978bf0b9-7eab-4562-81ab-92513cfe52c2
+1695293991155	Marionette	INFO	Stopped listening on port 59952
+Dynamically enable window occlusion 1
+ng command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 29" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofiletrrQPV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293868945	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293869067	Marionette	INFO	Listening on port 60039
+WebDriver BiDi listening on ws://127.0.0.1:60029
+Read port: 60039
+1695293869397	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60029/devtools/browser/0441b402-d316-495c-8feb-adea139428a4
+1695293921118	Marionette	INFO	Stopped listening on port 60039
+Dynamically enable window occlusion 1
+1695293989425	geckodriver	INFO	Listening on 127.0.0.1:60157
+1695293992472	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 58" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileHU6Mz1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695293993011	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695293993135	Marionette	INFO	Listening on port 60168
+WebDriver BiDi listening on ws://127.0.0.1:60158
+Read port: 60168
+1695293993483	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60158/devtools/browser/2e3a6748-006a-46b5-8bf4-5d3e0724bac0
+1695294002449	Marionette	INFO	Stopped listening on port 60168
+Dynamically enable window occlusion 1
+1695294024143	geckodriver	INFO	Listening on 127.0.0.1:60233
+1695294027200	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 34" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilehT9kxB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294027739	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294027868	Marionette	INFO	Listening on port 60244
+WebDriver BiDi listening on ws://127.0.0.1:60234
+Read port: 60244
+1695294028205	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60234/devtools/browser/a545c986-37bf-4869-9459-5afff4acb8ed
+1695294037627	Marionette	INFO	Stopped listening on port 60244
+Dynamically enable window occlusion 1
+1695294079522	geckodriver	INFO	Listening on 127.0.0.1:60332
+1695294082601	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 33" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofiletkZlOs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294083133	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294083249	Marionette	INFO	Listening on port 60345
+WebDriver BiDi listening on ws://127.0.0.1:60333
+Read port: 60345
+1695294083368	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60333/devtools/browser/7003ca52-e830-48a4-8cbb-71c0912de3cd
+1695294091870	Marionette	INFO	Stopped listening on port 60345
+Dynamically enable window occlusion 1
+1695294135460	geckodriver	INFO	Listening on 127.0.0.1:60428
+1695294138516	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 29" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileQBF05g"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294139055	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294139175	Marionette	INFO	Listening on port 60440
+WebDriver BiDi listening on ws://127.0.0.1:60429
+Read port: 60440
+1695294139442	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60429/devtools/browser/c0821d6e-4060-4707-91c8-4a0de911f0b2
+1695294454085	Marionette	INFO	Stopped listening on port 60440
+Dynamically enable window occlusion 1
+ng command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 18" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileIp2O8f"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294180993	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294181123	Marionette	INFO	Listening on port 60526
+WebDriver BiDi listening on ws://127.0.0.1:60518
+Read port: 60526
+1695294181399	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60518/devtools/browser/17754d63-742b-4f1c-9518-bc79e32ce040
+1695294251076	Marionette	INFO	Stopped listening on port 60526
+Dynamically enable window occlusion 1
+1695294273587	geckodriver	INFO	Listening on 127.0.0.1:60680
+1695294276664	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 81" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilex81Fv0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294277287	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294277410	Marionette	INFO	Listening on port 60690
+WebDriver BiDi listening on ws://127.0.0.1:60681
+Read port: 60690
+1695294277807	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60681/devtools/browser/00576bb9-d8b2-46ee-be75-d8d75879f056
+1695294302825	Marionette	INFO	Stopped listening on port 60690
+Dynamically enable window occlusion 1
+1695294308117	geckodriver	INFO	Listening on 127.0.0.1:60746
+1695294311169	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 47" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilesyWBfD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294311697	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294311805	Marionette	INFO	Listening on port 60756
+WebDriver BiDi listening on ws://127.0.0.1:60747
+Read port: 60756
+1695294312037	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60747/devtools/browser/7c7fa86c-8ca1-491b-ab66-e2ac930c3bf8
+1695294322908	Marionette	INFO	Stopped listening on port 60756
+Dynamically enable window occlusion 1
+1695294326466	geckodriver	INFO	Listening on 127.0.0.1:60807
+1695294329530	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 08" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileH5xU02"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294330051	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294330172	Marionette	INFO	Listening on port 60825
+WebDriver BiDi listening on ws://127.0.0.1:60808
+Read port: 60825
+1695294330436	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60808/devtools/browser/8e4266ac-2d92-4076-b07c-161d76abedaa
+1695294340558	Marionette	INFO	Stopped listening on port 60825
+Dynamically enable window occlusion 1
+1695294374470	geckodriver	INFO	Listening on 127.0.0.1:60892
+1695294377544	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 93" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilemWSfMi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294378031	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294378155	Marionette	INFO	Listening on port 60902
+WebDriver BiDi listening on ws://127.0.0.1:60893
+Read port: 60902
+1695294378527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60893/devtools/browser/c51e2095-4fb4-473a-bed7-d5d7a0f0abbd
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695294450378	Marionette	INFO	Stopped listening on port 60902
+Dynamically enable window occlusion 1
+ "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileOAwf37"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294433957	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294434078	Marionette	INFO	Listening on port 61008
+WebDriver BiDi listening on ws://127.0.0.1:60999
+Read port: 61008
+1695294434417	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60999/devtools/browser/ec9d9a67-26ed-49ac-9bcd-fec9f2402768
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695294447382	Marionette	INFO	Stopped listening on port 61008
+Dynamically enable window occlusion 1
+1695294842421	geckodriver	INFO	Listening on 127.0.0.1:61329
+1695294845493	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 30" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileej29X5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294845999	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294846118	Marionette	INFO	Listening on port 61339
+WebDriver BiDi listening on ws://127.0.0.1:61330
+Read port: 61339
+1695294846464	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61330/devtools/browser/7db7a31f-f4ad-48f0-84fc-84a4f14100ee
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695294899895	geckodriver	INFO	Listening on 127.0.0.1:61417
+1695294902939	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 18" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileG3hmvh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294903450	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294903571	Marionette	INFO	Listening on port 61427
+WebDriver BiDi listening on ws://127.0.0.1:61418
+Read port: 61427
+1695294903841	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61418/devtools/browser/f47aa910-4a0a-4d74-8475-bf8c41a7a49e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695294918257	Marionette	INFO	Stopped listening on port 61427
+Dynamically enable window occlusion 1
+1695294939088	geckodriver	INFO	Listening on 127.0.0.1:61495
+1695294942127	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 96" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilePFBqjX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294942630	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294942749	Marionette	INFO	Listening on port 61504
+WebDriver BiDi listening on ws://127.0.0.1:61496
+Read port: 61504
+1695294943008	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61496/devtools/browser/39cf14aa-ad67-4ec6-ab8b-20cfb4bd2ee9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695294956870	Marionette	INFO	Stopped listening on port 61504
+Dynamically enable window occlusion 1
+1695294968574	geckodriver	INFO	Listening on 127.0.0.1:61568
+1695294971639	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 69" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilejrDAo4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294980394	geckodriver	INFO	Listening on 127.0.0.1:61593
+1695294983481	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 94" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilePEChps"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695294983984	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695294984106	Marionette	INFO	Listening on port 61603
+WebDriver BiDi listening on ws://127.0.0.1:61594
+Read port: 61603
+1695294984367	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61594/devtools/browser/afd3f441-8840-493b-b8b0-27f26a7114cd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695294997352	Marionette	INFO	Stopped listening on port 61603
+Dynamically enable window occlusion 1
+1695295252935	geckodriver	INFO	Listening on 127.0.0.1:61854
+1695295256003	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 55" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileiJ1I97"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695295256508	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695295256628	Marionette	INFO	Listening on port 61864
+WebDriver BiDi listening on ws://127.0.0.1:61855
+Read port: 61864
+1695295256890	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61855/devtools/browser/f38f72cc-fb36-4eca-bcee-d01564f0c06e
+1695295271349	Marionette	INFO	Stopped listening on port 61864
+Dynamically enable window occlusion 1
+1695295285854	geckodriver	INFO	Listening on 127.0.0.1:61921
+1695295288930	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 22" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilewnEC3N"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695295289504	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695295289623	Marionette	INFO	Listening on port 61933
+WebDriver BiDi listening on ws://127.0.0.1:61922
+Read port: 61933
+1695295289959	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61922/devtools/browser/ce10d692-3225-4ca4-9d94-9c5017a0b033
+1695295297976	Marionette	INFO	Stopped listening on port 61933
+Dynamically enable window occlusion 1
+1695295396398	geckodriver	INFO	Listening on 127.0.0.1:62064
+1695295399439	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 65" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilebJtJb1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695295399973	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695295400085	Marionette	INFO	Listening on port 62073
+Read port: 62073
+WebDriver BiDi listening on ws://127.0.0.1:62065
+1695295400189	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62065/devtools/browser/560c27ab-ab99-4976-b2a6-32b3f38dc6c9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695295415134	Marionette	INFO	Stopped listening on port 62073
+Dynamically enable window occlusion 1
+1695295430380	geckodriver	INFO	Listening on 127.0.0.1:62129
+1695295433451	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 30" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilerjPRBj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695295433981	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695295434111	Marionette	INFO	Listening on port 62139
+WebDriver BiDi listening on ws://127.0.0.1:62130
+Read port: 62139
+1695295434237	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62130/devtools/browser/aba50df9-ca93-4e63-a71f-466e7b55c33c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695295939511	Marionette	INFO	Stopped listening on port 62139
+Dynamically enable window occlusion 1
+ng command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 56" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileHLRrgT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695295888639	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695295888766	Marionette	INFO	Listening on port 62568
+Read port: 62568
+WebDriver BiDi listening on ws://127.0.0.1:62556
+1695295888877	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62556/devtools/browser/cc9779e4-4c8a-4f82-a853-7efcae367853
+1695295904116	Marionette	INFO	Stopped listening on port 62568
+Dynamically enable window occlusion 1
+1695295918981	geckodriver	INFO	Listening on 127.0.0.1:62634
+1695295922038	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 35" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileJAQerm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695295922652	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695295922773	Marionette	INFO	Listening on port 62644
+WebDriver BiDi listening on ws://127.0.0.1:62635
+Read port: 62644
+1695295923055	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62635/devtools/browser/35821636-9fe5-432f-8d3b-4fb3447aff67
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695295936110	Marionette	INFO	Stopped listening on port 62644
+Dynamically enable window occlusion 1
+1695296919422	geckodriver	INFO	Listening on 127.0.0.1:63604
+1695296922444	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 05" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilennueOt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695296922953	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695296923073	Marionette	INFO	Listening on port 63614
+WebDriver BiDi listening on ws://127.0.0.1:63605
+Read port: 63614
+1695296923338	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63605/devtools/browser/ccfe1ea6-9483-4285-b199-b1688eda5df0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695296953608	Marionette	INFO	Stopped listening on port 63614
+Dynamically enable window occlusion 1
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+1695296953706	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2147500036, errorCode: 2, reason: error
+1695296986588	geckodriver	INFO	Listening on 127.0.0.1:63711
+1695296989633	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 12" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofile5JGP0Y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695296990176	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695296990347	Marionette	INFO	Listening on port 63722
+WebDriver BiDi listening on ws://127.0.0.1:63712
+Read port: 63722
+1695296990708	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63712/devtools/browser/c9805e59-b19e-4a59-a8ea-8789d1fc8dc7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695297116018	geckodriver	INFO	Listening on 127.0.0.1:63877
+1695297119075	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 78" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilenC0Hgo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695297119585	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695297119705	Marionette	INFO	Listening on port 63887
+WebDriver BiDi listening on ws://127.0.0.1:63878
+Read port: 63887
+1695297119971	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63878/devtools/browser/23e15055-727c-4235-8e7d-58d8d82cc0cc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695297154019	Marionette	INFO	Stopped listening on port 63887
+Dynamically enable window occlusion 1
+1695297225027	geckodriver	INFO	Listening on 127.0.0.1:64019
+1695297228079	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 20" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileEJ26rv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695297228605	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695297228728	Marionette	INFO	Listening on port 64033
+Read port: 64033
+WebDriver BiDi listening on ws://127.0.0.1:64020
+1695297228835	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64020/devtools/browser/d082df39-d957-4b19-a70b-e63ba40ea7a1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695297242736	Marionette	INFO	Stopped listening on port 64033
+Dynamically enable window occlusion 1
+1695297326097	geckodriver	INFO	Listening on 127.0.0.1:64143
+1695297329176	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 44" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilenXZSOg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695297329722	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695297329842	Marionette	INFO	Listening on port 64159
+WebDriver BiDi listening on ws://127.0.0.1:64144
+Read port: 64159
+1695297330217	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64144/devtools/browser/17ab4d89-a562-4774-9fa4-dc567b269fd1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695297413626	geckodriver	INFO	Listening on 127.0.0.1:64273
+1695297416658	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 74" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileFbaNKb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695297417203	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695297417347	Marionette	INFO	Listening on port 64283
+WebDriver BiDi listening on ws://127.0.0.1:64274
+Read port: 64283
+1695297417725	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64274/devtools/browser/a23f13b2-ed03-4431-9a9b-47e263774846
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695297477797	Marionette	INFO	Stopped listening on port 64283
+Dynamically enable window occlusion 1
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping
+1695297774937	geckodriver	INFO	Listening on 127.0.0.1:64607
+1695297777982	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 08" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilecinmMG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695297778509	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695297778628	Marionette	INFO	Listening on port 64618
+Read port: 64618
+WebDriver BiDi listening on ws://127.0.0.1:64608
+1695297778739	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64608/devtools/browser/d6b82fa1-b494-4ee8-8693-c11a35d8bf2c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695297800277	Marionette	INFO	Stopped listening on port 64618
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1695357777962	geckodriver	INFO	Listening on 127.0.0.1:57189
+1695357781040	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 90" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileEd3t1t"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695357782029	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695357782171	Marionette	INFO	Listening on port 57203
+WebDriver BiDi listening on ws://127.0.0.1:57190
+Read port: 57203
+1695357782318	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57190/devtools/browser/6c77cf94-447a-433e-86c4-e917f669f9a7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695357789247	Marionette	INFO	Stopped listening on port 57203
+Dynamically enable window occlusion 1
+1695358194960	geckodriver	INFO	Listening on 127.0.0.1:57629
+1695358198003	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 30" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileqCZf7N"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695358198559	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695358198712	Marionette	INFO	Listening on port 57637
+WebDriver BiDi listening on ws://127.0.0.1:57630
+Read port: 57637
+1695358199082	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57630/devtools/browser/f15b6839-8529-4392-a3ed-260d0902865b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695358204436	Marionette	INFO	Stopped listening on port 57637
+Dynamically enable window occlusion 1
+1695362401861	geckodriver	INFO	Listening on 127.0.0.1:51428
+1695362404931	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 29" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilec1X0jQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695362405804	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695362405934	Marionette	INFO	Listening on port 51442
+WebDriver BiDi listening on ws://127.0.0.1:51429
+Read port: 51442
+1695362406295	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51429/devtools/browser/b3bc27d5-32a8-4529-aee8-44d5c8df1768
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1695362529540	Marionette	INFO	Stopped listening on port 51442
+Dynamically enable window occlusion 1
+ng command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 51" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileCUhbtj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695362523417	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695362523535	Marionette	INFO	Listening on port 51558
+WebDriver BiDi listening on ws://127.0.0.1:51551
+Read port: 51558
+1695362523860	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51551/devtools/browser/bcf423d0-170d-4ce4-978d-37accf49bd88
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695362645018	geckodriver	INFO	Listening on 127.0.0.1:51672
+1695362648120	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 73" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofile9jQZnZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695362648839	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695362648961	Marionette	INFO	Listening on port 51680
+WebDriver BiDi listening on ws://127.0.0.1:51673
+Read port: 51680
+1695362649284	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51673/devtools/browser/2833cae6-f654-48dc-abaa-6ae79f218c80
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695363055175	geckodriver	INFO	Listening on 127.0.0.1:52075
+1695363058244	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 76" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofile8IMJCS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695363058717	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695363058832	Marionette	INFO	Listening on port 52085
+WebDriver BiDi listening on ws://127.0.0.1:52076
+Read port: 52085
+1695363059164	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52076/devtools/browser/aa8695a0-2450-4cc3-8694-59e86c6bc5c9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695363066256	Marionette	INFO	Stopped listening on port 52085
+Dynamically enable window occlusion 1
+1695363204129	geckodriver	INFO	Listening on 127.0.0.1:52176
+1695363207202	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 77" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileFIfOHf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695363207720	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695363207838	Marionette	INFO	Listening on port 52184
+WebDriver BiDi listening on ws://127.0.0.1:52177
+Read port: 52184
+1695363208091	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52177/devtools/browser/018f25cb-f430-445f-97be-9acfa9a072b6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695363216407	Marionette	INFO	Stopped listening on port 52184
+Dynamically enable window occlusion 1
+1695363600509	geckodriver	INFO	Listening on 127.0.0.1:52335
+1695363603559	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 36" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilezOyDi2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695363604077	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695363604192	Marionette	INFO	Listening on port 52344
+WebDriver BiDi listening on ws://127.0.0.1:52336
+Read port: 52344
+1695363604448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52336/devtools/browser/223b8dcf-974a-41fa-910e-2979084564e3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695363854342	geckodriver	INFO	Listening on 127.0.0.1:52473
+1695363857377	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 74" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileDfcJaz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695363857863	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695363857979	Marionette	INFO	Listening on port 52486
+WebDriver BiDi listening on ws://127.0.0.1:52474
+Read port: 52486
+1695363858315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52474/devtools/browser/8aef2048-aef9-4794-9430-cb43ae068164
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695363866305	Marionette	INFO	Stopped listening on port 52486
+Dynamically enable window occlusion 1
+1695363944145	geckodriver	INFO	Listening on 127.0.0.1:52546
+1695363947210	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 47" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileB7AhNf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695363947725	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695363947841	Marionette	INFO	Listening on port 52555
+WebDriver BiDi listening on ws://127.0.0.1:52547
+Read port: 52555
+1695363948101	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52547/devtools/browser/8e472be4-8d20-4da2-bbd8-6d1d91cb2357
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364000510	Marionette	INFO	Stopped listening on port 52555
+Dynamically enable window occlusion 1
+1695364234570	geckodriver	INFO	Listening on 127.0.0.1:52748
+1695364237602	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 49" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofile11dnId"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364238096	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364238211	Marionette	INFO	Listening on port 52756
+WebDriver BiDi listening on ws://127.0.0.1:52749
+Read port: 52756
+1695364238525	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52749/devtools/browser/dac17052-c2f9-4bea-a14f-e4876c08433a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364290610	Marionette	INFO	Stopped listening on port 52756
+Dynamically enable window occlusion 1
+1695364319871	geckodriver	INFO	Listening on 127.0.0.1:52841
+1695364322912	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 42" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileSUxFBi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364323393	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364323513	Marionette	INFO	Listening on port 52852
+WebDriver BiDi listening on ws://127.0.0.1:52842
+Read port: 52852
+1695364323841	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52842/devtools/browser/a565bfdb-0937-40f0-bf73-f0c6582146d8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364360881	Marionette	INFO	Stopped listening on port 52852
+Dynamically enable window occlusion 1
+1695364370517	geckodriver	INFO	Listening on 127.0.0.1:52910
+1695364373582	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 11" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileObnXyi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364374139	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364374261	Marionette	INFO	Listening on port 52918
+WebDriver BiDi listening on ws://127.0.0.1:52911
+Read port: 52918
+1695364374534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52911/devtools/browser/e5db0537-df84-44aa-a519-95a3a5a9a7ad
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364443715	geckodriver	INFO	Listening on 127.0.0.1:52981
+1695364446761	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 82" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileyIgCCc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364447249	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364447364	Marionette	INFO	Listening on port 52989
+WebDriver BiDi listening on ws://127.0.0.1:52982
+Read port: 52989
+1695364447686	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52982/devtools/browser/c3d2397d-b01c-4263-8c3a-f38497118299
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364542248	geckodriver	INFO	Listening on 127.0.0.1:53085
+1695364545296	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 86" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileH3b1Wt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364545794	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364545915	Marionette	INFO	Listening on port 53095
+WebDriver BiDi listening on ws://127.0.0.1:53086
+Read port: 53095
+1695364546177	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53086/devtools/browser/4833dba9-167b-4e14-bada-963f1474abe5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364606508	geckodriver	INFO	Listening on 127.0.0.1:53212
+1695364609575	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 13" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileajhHom"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364610056	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364610172	Marionette	INFO	Listening on port 53222
+WebDriver BiDi listening on ws://127.0.0.1:53213
+Read port: 53222
+1695364610501	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53213/devtools/browser/5b9bddd2-3157-40de-835e-465c67189794
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364641325	Marionette	INFO	Stopped listening on port 53222
+Dynamically enable window occlusion 1
+console.error: services.settings: 
+  main/normandy-recipes-capabilities Signature failed  Error: Shutdown, aborting read-only worker requests.
+console.error: services.settings: 
+  Message: Error: Shutdown, aborting read-only worker requests.
+  Stack:
+    _abortCancelableRequests@resource://services-settings/RemoteSettingsWorker.sys.mjs:131:19
+@resource://services-settings/RemoteSettingsWorker.sys.mjs:207:28
+trigger@resource://gre/modules/AsyncShutdown.sys.mjs:758:23
+_wait@resource://gre/modules/AsyncShutdown.sys.mjs:918:15
+wait@resource://gre/modules/AsyncShutdown.sys.mjs:899:34
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:558:10
+
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+console.warn: services.settings: main/search-telemetry-v2 sync interrupted by shutdown
+console.error: (new Error("IndexedDB: main/query-stripping getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1695364667523	geckodriver	INFO	Listening on 127.0.0.1:53288
+1695364670581	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 89" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileN3W7WQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364671073	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364671200	Marionette	INFO	Listening on port 53296
+WebDriver BiDi listening on ws://127.0.0.1:53289
+Read port: 53296
+1695364671561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53289/devtools/browser/e9c1ac3f-4076-405d-8c68-4512bb9d0a66
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364727322	geckodriver	INFO	Listening on 127.0.0.1:53361
+1695364730357	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 62" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilealptjy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364730843	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364730965	Marionette	INFO	Listening on port 53369
+WebDriver BiDi listening on ws://127.0.0.1:53362
+Read port: 53369
+1695364731291	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53362/devtools/browser/8104f4b1-6e87-4184-a0b1-aac5f400de6e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695364753298	Marionette	INFO	Stopped listening on port 53369
+Dynamically enable window occlusion 1
+1695364816883	geckodriver	INFO	Listening on 127.0.0.1:53459
+1695364819960	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 60" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilehBj7Ub"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695364820454	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695364820571	Marionette	INFO	Listening on port 53470
+WebDriver BiDi listening on ws://127.0.0.1:53460
+Read port: 53470
+1695364820900	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53460/devtools/browser/2f48abef-1268-46cb-92b5-1a15b85b8310
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695365046918	geckodriver	INFO	Listening on 127.0.0.1:53634
+1695365049980	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 35" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilefOKW2m"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695365050461	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695365050578	Marionette	INFO	Listening on port 53644
+WebDriver BiDi listening on ws://127.0.0.1:53635
+Read port: 53644
+1695365050904	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53635/devtools/browser/56c24bed-cbb6-41d1-8ee1-35442d3b3255
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695365161688	geckodriver	INFO	Listening on 127.0.0.1:53742
+1695365164744	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 43" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileR1O9u1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695365165239	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695365165361	Marionette	INFO	Listening on port 53751
+WebDriver BiDi listening on ws://127.0.0.1:53743
+Read port: 53751
+1695365165682	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53743/devtools/browser/355221a0-7a08-4f9f-8045-a63eacb207c7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695365172879	Marionette	INFO	Stopped listening on port 53751
+Dynamically enable window occlusion 1
+1695366384105	geckodriver	INFO	Listening on 127.0.0.1:54546
+1695366387120	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 47" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofiledhgBl6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366387639	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366387762	Marionette	INFO	Listening on port 54560
+WebDriver BiDi listening on ws://127.0.0.1:54547
+Read port: 54560
+1695366388038	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54547/devtools/browser/8644c97b-dddb-440c-a985-00f3d460c02f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366396532	Marionette	INFO	Stopped listening on port 54560
+Dynamically enable window occlusion 1
+1695366437943	geckodriver	INFO	Listening on 127.0.0.1:54669
+1695366441002	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 70" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilerTzwZX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366441491	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366441611	Marionette	INFO	Listening on port 54681
+WebDriver BiDi listening on ws://127.0.0.1:54670
+Read port: 54681
+1695366441947	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54670/devtools/browser/ad0eb870-9fba-4cc2-82b2-cc70f31702e4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366468965	Marionette	INFO	Stopped listening on port 54681
+Dynamically enable window occlusion 1
+1695366522738	geckodriver	INFO	Listening on 127.0.0.1:54822
+1695366525799	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 23" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileIDtYn0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366526307	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366526426	Marionette	INFO	Listening on port 54833
+WebDriver BiDi listening on ws://127.0.0.1:54823
+Read port: 54833
+1695366526759	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54823/devtools/browser/c4b16324-93af-4c24-8109-439409ae6899
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366533228	Marionette	INFO	Stopped listening on port 54833
+Dynamically enable window occlusion 1
+1695366640932	geckodriver	INFO	Listening on 127.0.0.1:54960
+1695366644012	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 61" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileHwArEJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366644530	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366644649	Marionette	INFO	Listening on port 54970
+WebDriver BiDi listening on ws://127.0.0.1:54961
+Read port: 54970
+1695366645010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54961/devtools/browser/a282043b-ef37-4668-9d83-7ef533a941b6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366651656	Marionette	INFO	Stopped listening on port 54970
+Dynamically enable window occlusion 1
+1695366674720	geckodriver	INFO	Listening on 127.0.0.1:55032
+1695366677753	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 33" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilegw1kVM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366678242	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366678358	Marionette	INFO	Listening on port 55048
+WebDriver BiDi listening on ws://127.0.0.1:55033
+Read port: 55048
+1695366678680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55033/devtools/browser/88d3f45d-ca07-46a3-8946-64e7405f9d2d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366789916	geckodriver	INFO	Listening on 127.0.0.1:55154
+1695366792971	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 55" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofile7nJ53V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366793512	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366793634	Marionette	INFO	Listening on port 55164
+Read port: 55164
+WebDriver BiDi listening on ws://127.0.0.1:55155
+1695366793746	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55155/devtools/browser/473c99a8-7624-4b80-a1a3-7bfcdde8e5ff
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366800634	Marionette	INFO	Stopped listening on port 55164
+Dynamically enable window occlusion 1
+1695366817830	geckodriver	INFO	Listening on 127.0.0.1:55227
+1695366820896	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 28" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilesNnWgA"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366821386	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366821507	Marionette	INFO	Listening on port 55238
+WebDriver BiDi listening on ws://127.0.0.1:55228
+Read port: 55238
+1695366821831	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55228/devtools/browser/847b1eac-7e55-4023-8264-0dc862cd3e3b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366829467	Marionette	INFO	Stopped listening on port 55238
+Dynamically enable window occlusion 1
+1695366843574	geckodriver	INFO	Listening on 127.0.0.1:55291
+1695366846604	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 92" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileY5ao7f"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695366847117	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695366847244	Marionette	INFO	Listening on port 55302
+WebDriver BiDi listening on ws://127.0.0.1:55292
+Read port: 55302
+1695366847528	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55292/devtools/browser/00574dc4-53bb-48ae-96da-9a4728085bd6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695366854074	Marionette	INFO	Stopped listening on port 55302
+Dynamically enable window occlusion 1
+1695367087915	geckodriver	INFO	Listening on 127.0.0.1:55629
+1695367090964	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 30" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileSkfuqM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695367091448	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695367091566	Marionette	INFO	Listening on port 55639
+WebDriver BiDi listening on ws://127.0.0.1:55630
+Read port: 55639
+1695367091902	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55630/devtools/browser/57845b7a-4a52-44ac-bee9-a37b4362809c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695367098565	Marionette	INFO	Stopped listening on port 55639
+Dynamically enable window occlusion 1
+1695367123786	geckodriver	INFO	Listening on 127.0.0.1:55700
+1695367126831	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 01" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilek9NP2q"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695367127312	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695367127438	Marionette	INFO	Listening on port 55710
+WebDriver BiDi listening on ws://127.0.0.1:55701
+Read port: 55710
+1695367127773	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55701/devtools/browser/88ae8df0-1dd9-4b9c-8971-7e6870aeb68e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695367134712	Marionette	INFO	Stopped listening on port 55710
+Dynamically enable window occlusion 1
+1695367156991	geckodriver	INFO	Listening on 127.0.0.1:55780
+1695367160051	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 81" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileGdLxVQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695367160545	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695367160660	Marionette	INFO	Listening on port 55792
+WebDriver BiDi listening on ws://127.0.0.1:55781
+Read port: 55792
+1695367160976	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55781/devtools/browser/1901d9bc-1384-4f8d-ac18-f08b92e3f227
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695367167480	Marionette	INFO	Stopped listening on port 55792
+Dynamically enable window occlusion 1
+1695367223779	geckodriver	INFO	Listening on 127.0.0.1:55890
+1695367226827	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 91" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilecDAqTa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695367227302	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695367227419	Marionette	INFO	Listening on port 55900
+WebDriver BiDi listening on ws://127.0.0.1:55891
+Read port: 55900
+1695367227744	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55891/devtools/browser/20f6805d-8e77-4fc2-8db3-0860b3583e4d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695367234288	Marionette	INFO	Stopped listening on port 55900
+Dynamically enable window occlusion 1
+1695367695651	geckodriver	INFO	Listening on 127.0.0.1:56322
+1695367698694	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 23" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofile35E1vG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695367699180	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695367699321	Marionette	INFO	Listening on port 56338
+WebDriver BiDi listening on ws://127.0.0.1:56323
+Read port: 56338
+1695367699575	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56323/devtools/browser/9fe0a264-2b84-459f-a5de-efc4a8f05f81
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695367705166	Marionette	INFO	Stopped listening on port 56338
+Dynamically enable window occlusion 1
+1695367830453	geckodriver	INFO	Listening on 127.0.0.1:56479
+1695367833528	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 80" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileqgPdKK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695367834010	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695367834125	Marionette	INFO	Listening on port 56490
+WebDriver BiDi listening on ws://127.0.0.1:56480
+Read port: 56490
+1695367834457	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56480/devtools/browser/ce45dae3-ad6a-4bf2-9117-06ffe31e6364
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695367840147	Marionette	INFO	Stopped listening on port 56490
+Dynamically enable window occlusion 1
+1695368805924	geckodriver	INFO	Listening on 127.0.0.1:57370
+1695368808973	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 71" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileSJw54m"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695368809479	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695368809594	Marionette	INFO	Listening on port 57381
+WebDriver BiDi listening on ws://127.0.0.1:57371
+Read port: 57381
+1695368809918	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57371/devtools/browser/75c1d8f4-17e3-44d5-8c24-5aa270e15b74
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695368816490	Marionette	INFO	Stopped listening on port 57381
+Dynamically enable window occlusion 1
+1695368947001	geckodriver	INFO	Listening on 127.0.0.1:57548
+1695368950062	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 49" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileieluaW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695368950581	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695368950704	Marionette	INFO	Listening on port 57558
+WebDriver BiDi listening on ws://127.0.0.1:57549
+Read port: 57558
+1695368950960	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57549/devtools/browser/15014f39-717a-47f4-9bcd-8eec7192c204
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695368958133	Marionette	INFO	Stopped listening on port 57558
+Dynamically enable window occlusion 1
+1695368985670	geckodriver	INFO	Listening on 127.0.0.1:57619
+1695368988722	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 20" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilebG6lzH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695368989296	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695368989436	Marionette	INFO	Listening on port 57629
+WebDriver BiDi listening on ws://127.0.0.1:57620
+Read port: 57629
+1695368989823	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57620/devtools/browser/b70a4600-c2ab-49aa-b0c1-05e11843e44c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695368996233	Marionette	INFO	Stopped listening on port 57629
+Dynamically enable window occlusion 1
+1695372266658	geckodriver	INFO	Listening on 127.0.0.1:58907
+1695372269711	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 08" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileoEyAqz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695372270293	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695372270418	Marionette	INFO	Listening on port 58921
+WebDriver BiDi listening on ws://127.0.0.1:58908
+Read port: 58921
+1695372270752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58908/devtools/browser/d5da73b8-9308-4bb8-a4d0-c083dfd20a02
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695372276022	Marionette	INFO	Stopped listening on port 58921
+Dynamically enable window occlusion 1
+1695372326983	geckodriver	INFO	Listening on 127.0.0.1:58988
+1695372330006	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 89" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilesZnxbl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695372330491	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695372330614	Marionette	INFO	Listening on port 58997
+WebDriver BiDi listening on ws://127.0.0.1:58989
+Read port: 58997
+1695372330955	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58989/devtools/browser/2302a9e4-f866-4e7d-9a15-274711d04e52
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695372337381	Marionette	INFO	Stopped listening on port 58997
+Dynamically enable window occlusion 1
+1695372360850	geckodriver	INFO	Listening on 127.0.0.1:59050
+1695372363917	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 51" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileqJTlUL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695372364528	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695372364647	Marionette	INFO	Listening on port 59060
+WebDriver BiDi listening on ws://127.0.0.1:59051
+Read port: 59060
+1695372364903	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59051/devtools/browser/47919fef-d5b9-4af5-89c3-ba5bd6b20314
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695372371588	Marionette	INFO	Stopped listening on port 59060
+Dynamically enable window occlusion 1
+1695615329926	geckodriver	INFO	Listening on 127.0.0.1:52450
+1695615332992	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 51" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileuKWOwE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695615333874	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695615334002	Marionette	INFO	Listening on port 52472
+WebDriver BiDi listening on ws://127.0.0.1:52451
+Read port: 52472
+1695615334363	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52451/devtools/browser/1ba5fcff-2140-4097-8104-b93a8ba3704e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695615340027	Marionette	INFO	Stopped listening on port 52472
+Dynamically enable window occlusion 1
+1695616149460	geckodriver	INFO	Listening on 127.0.0.1:52874
+1695616152533	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 75" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileWXJI6p"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695616153315	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695616153438	Marionette	INFO	Listening on port 52882
+WebDriver BiDi listening on ws://127.0.0.1:52875
+Read port: 52882
+1695616153779	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52875/devtools/browser/0fdf8cc8-acf0-4dba-901f-1d021ae63118
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695616160326	Marionette	INFO	Stopped listening on port 52882
+Dynamically enable window occlusion 1
+1695616192278	geckodriver	INFO	Listening on 127.0.0.1:52944
+1695616195349	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 45" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileDtq8Hg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695616195882	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695616196010	Marionette	INFO	Listening on port 52952
+Read port: 52952
+WebDriver BiDi listening on ws://127.0.0.1:52945
+1695616196129	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52945/devtools/browser/17036e92-2d62-4c81-b0fb-65828a59b246
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695616203332	Marionette	INFO	Stopped listening on port 52952
+Dynamically enable window occlusion 1
+1695616211161	geckodriver	INFO	Listening on 127.0.0.1:53002
+1695616214205	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 03" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilezkYnjQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695616214777	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695616214913	Marionette	INFO	Listening on port 53010
+WebDriver BiDi listening on ws://127.0.0.1:53003
+Read port: 53010
+1695616215258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53003/devtools/browser/302c4f1b-cfc6-4e28-930c-36219a1ae038
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695616220862	Marionette	INFO	Stopped listening on port 53010
+Dynamically enable window occlusion 1
+1695616707951	geckodriver	INFO	Listening on 127.0.0.1:53256
+1695616711012	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 57" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileKkIW0m"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695616711534	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695616711669	Marionette	INFO	Listening on port 53264
+Read port: 53264
+WebDriver BiDi listening on ws://127.0.0.1:53257
+1695616711769	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53257/devtools/browser/6dfd080b-f206-4494-ab4c-58f8a5ca688e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695616717297	Marionette	INFO	Stopped listening on port 53264
+Dynamically enable window occlusion 1
+1695616735733	geckodriver	INFO	Listening on 127.0.0.1:53300
+1695616738776	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 01" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofileU24DEw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695616739369	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695616739514	Marionette	INFO	Listening on port 53308
+WebDriver BiDi listening on ws://127.0.0.1:53301
+Read port: 53308
+1695616739787	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53301/devtools/browser/61a7b9ec-8c4c-4b6f-a0f8-977cf60a0c16
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695616747543	Marionette	INFO	Stopped listening on port 53308
+Dynamically enable window occlusion 1
+1695617125814	geckodriver	INFO	Listening on 127.0.0.1:53512
+1695617128866	mozrunner::runner	INFO	Running command: "C:\\Users\\dana\\.cache\\selenium\\firefox\\win64\\117.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 13" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dana\\AppData\\Local\\Temp\\rust_mozprofilepSp7vi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695617129385	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695617129517	Marionette	INFO	Listening on port 53520
+Read port: 53520
+WebDriver BiDi listening on ws://127.0.0.1:53513
+1695617129637	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53513/devtools/browser/d2f7ef09-130a-4169-a29a-bf73a5d66d7d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://cappa.csu.ru."
+1695617135629	Marionette	INFO	Stopped listening on port 53520
+Dynamically enable window occlusion 1
