@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy import Integer, cast
 from sqlalchemy.orm import sessionmaker
 import logging
+import os
 
 storage = MemoryStorage()
 bot = Bot(token=config.N_TOKEN)
@@ -51,5 +52,5 @@ async def start(message: types.Message):
                                  + '\nauthorization_time: ' + data.authorization_time)
 
 
-if __name__ == '__main__':
+def execute():
     executor.start_polling(dp, skip_updates=True)

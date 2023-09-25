@@ -161,5 +161,5 @@ async def create_acc(message: types.Message, state: FSMContext):
     await state.finish()
 
 
-if __name__ == '__main__':
+def execute():
     executor.start_polling(dp, skip_updates=True)
