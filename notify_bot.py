@@ -11,7 +11,12 @@ import logging
 storage = MemoryStorage()
 bot = Bot(token=config.N_TOKEN)
 dp = Dispatcher(bot, storage=storage)
-logging.basicConfig(level=logging.ERROR)
+os.makedirs('logs', exist_ok=True)
+logging.basicConfig(filename=config.LOGPATH + config.N_LOGNAME,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    datefmt='%d-%b-%y %H:%M:%S',
+                    filemode='a',
+                    level=logging.ERROR)
 dp.middleware.setup(LoggingMiddleware())
 
 db = Database()
