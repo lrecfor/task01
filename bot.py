@@ -3,7 +3,7 @@ from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 from selenium.common import NoSuchElementException
-from utils import RegisterState, SigninState, connect_driver
+from utils import RegisterState, SigninState
 from database import Database, Reg, Auth
 from datetime import datetime
 from cryptography.fernet import Fernet
@@ -11,6 +11,7 @@ import time
 import logging
 import config
 import os
+from driver import Driver
 
 fernet = Fernet(config.KEY)
 
@@ -54,7 +55,7 @@ async def sign_in(message: types.Message, state: FSMContext):
     user_data = db.get(data["username"])
     username = user_data.username
     password = fernet.decrypt(user_data.password).decode('utf-8')
-    driver = connect_driver()
+    driver = Driver()
 
     # field filling
     driver.find_element("xpath", '//*[@id="id_login"]').send_keys(username)
@@ -122,7 +123,7 @@ async def create_acc(message: types.Message, state: FSMContext):
     data = await state.get_data()
 
     # account creation
-    driver = connect_driver()
+    driver = Driver()
     # registration button search
     driver.find_element("xpath", "/html/body/div[1]/main/div/div[2]/div/form/a").click()
     time.sleep(1)
@@ -163,3 +164,6 @@ async def create_acc(message: types.Message, state: FSMContext):
 
 def execute():
     executor.start_polling(dp, skip_updates=True)
+
+
+execute()
