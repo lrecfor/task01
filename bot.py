@@ -11,6 +11,7 @@ import time
 import logging
 import config
 import os
+import asyncio
 from driver import Driver
 
 fernet = Fernet(config.KEY)
@@ -52,25 +53,35 @@ async def authorisation(message: types.Message):
 async def sign_in(message: types.Message, state: FSMContext):
     await state.update_data(username=message.text)
     data = await state.get_data()
-    user_data = db.get(data["username"])
-    username = user_data.username
-    password = fernet.decrypt(user_data.password).decode('utf-8')
+    try:
+        user_data = db.get(data["username"])
+        username = user_data.username
+        password = fernet.decrypt(user_data.password).decode('utf-8')
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")
+        await message.answer("Error.")
+        await state.finish()
     driver = Driver()
 
     # field filling
-    driver.find_element("xpath", '//*[@id="id_login"]').send_keys(username)
-    driver.find_element("xpath", '//*[@id="id_password"]').send_keys(password)
-    # submit button clicking
-    driver.find_element("xpath", '/html/body/div[1]/main/div/div[2]/div/form/input[5]').click()
+    # driver.find_element("xpath", '//*[@id="id_login"]').send_keys(username)
+    # driver.find_element("xpath", '//*[@id="id_password"]').send_keys(password)
+    # # submit button clicking
+    # driver.find_element("xpath", '/html/body/div[1]/main/div/div[2]/div/form/input[5]').click()
+    try:
+        await driver.open_browser_for_sign_in()
+        await driver.fill_element('#id_login', username)
+        await driver.fill_elements('#id_password', password)
+        await driver.click_element('.btn')
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")
 
     # error checking
     try:
-        if (driver.find_element("xpath", '/html/body/div/main/div/div[2]/div/form/small').text ==
+        if (await driver.find_element('.msg') ==
                 "Проверьте правильность написания логина и пароля"):
-            driver.close()
             await message.answer("Account was not found. Check your login and try again or create an account.")
     except NoSuchElementException:  # no errors
-        driver.close()
         db.add(Auth(user_id=user_data.id, authorization_time=datetime.now()))
         await message.answer("You signed in successfully.")
     await state.finish()
@@ -122,39 +133,30 @@ async def create_acc(message: types.Message, state: FSMContext):
     await state.update_data(password2=message.text)
     data = await state.get_data()
 
-    # account creation
     driver = Driver()
-    # registration button search
-    driver.find_element("xpath", "/html/body/div[1]/main/div/div[2]/div/form/a").click()
-    time.sleep(1)
-    # field search and input data
-    input_fields = driver.find_elements("class name", 'form-control')
-    for field in input_fields:
-        field_value = data.get(field.get_attribute('name'))
-        field.send_keys(field_value)
-    # submit button search
-    driver.find_element("xpath", '/html/body/div/main/div/div[2]/div/form/input[3]').click()
+    try:
+        await driver.open_browser_for_cr(data)
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")
 
     # error checking
     try:
         error_text = ""
-        if (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+        if (await driver.find_element('.msg') ==
                 "Пользователь с таким логином уже существует"):
             error_text = f"Account {data['username']} already exists. Please, use another login or sign in."
-        elif (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+        elif (await driver.find_element('.msg') ==
               "Пользователь с такой почтой уже существует"):
             error_text = f"Account with e-mail {data['email']} already exists. Please, use another e-mail or sign in."
-        elif (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+        elif (await driver.find_element('.msg') ==
               "Введите правильный адрес электронной почты"):
             error_text = f"Incorrect e-mail {data['email']}"
-        elif (driver.find_element("xpath", "/html/body/div/main/div/div[2]/div/form/small/ul[1]/li").text ==
+        elif (await driver.find_element('.msg') ==
               "Пароль должен быть больше 5 символов"):
             error_text = f"Password should be more than 5 characters"
 
-        driver.close()
         await message.answer(error_text)
     except NoSuchElementException:  # account was created without errors
-        driver.close()
         password = fernet.encrypt(data["password1"].encode('utf-8')).decode('utf-8')
         db.add(Reg(username=data['username'], password=password, registration_time=datetime.now()))
         await message.answer(f"Account {data['username']} was created successfully")

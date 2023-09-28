@@ -3,6 +3,7 @@ from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy import MetaData, Table, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import sessionmaker, declarative_base
 import config
+import psycopg2
 
 base = declarative_base()
 
