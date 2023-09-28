@@ -49,6 +49,7 @@ class Database:
         metadata.create_all(self.engine)
 
     def add(self, data):
+        # function for adding [data] to database
         Session = sessionmaker(bind=self.engine)
         session = Session()
         session.add(data)
@@ -56,6 +57,7 @@ class Database:
         session.close()
 
     def get(self, data):
+        # function for getting data from database by [data]
         Session = sessionmaker(bind=self.engine)
         session = Session()
         res = session.query(Reg).filter_by(username=data).first()

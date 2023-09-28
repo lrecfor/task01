@@ -4,23 +4,28 @@ from arsenic import get_session, keys, browsers, services
 
 
 class NoSuchElementException(Exception):
+    # class for exceptions when element is not found
     pass
 
 
 class RegistrationError(Exception):
+    # class for exceptions when registration is not successful
     pass
 
 
 class SigninError(Exception):
+    # class for exceptions when signin is not successful
     pass
 
 
 class InputError(Exception):
+    # class for exceptions when input is not valid
     pass
 
 
 class Driver:
     def __init__(self):
+        # path to geckodriver
         if sys.platform.startswith('win'):
             self.geckodriver = './geckodriver.exe'
         else:
@@ -29,6 +34,8 @@ class Driver:
         self.session = None
 
     async def click_element(self, selector):
+        # function for clicking element by [selector]
+        # raise an exception [NoSuchElementException] if element is not found
         try:
             element = await self.session.get_element(selector)
             await element.click()
@@ -36,12 +43,18 @@ class Driver:
             raise NoSuchElementException(f"Driver.click_element: Error: Unable to locate element '{selector}'")
 
     async def find_element(self, selector):
+        # function for finding element by [selector]
+        # raise an exception [NoSuchElementException] if element is not found
+        # return element if it is found
+        # return None if it is not found
         try:
             element = await self.session.get_element(selector)
         except Exception:
             raise NoSuchElementException(f"Driver.find_element: Error: Unable to locate element '{selector}'")
 
     async def fill_element(self, selector, data_):
+        # function for filling element by [selector] with [data_]
+        # raise an exception [NoSuchElementException] if element is not found
         try:
             field = await self.session.get_element(selector)
             await field.send_keys(data_)
@@ -49,6 +62,8 @@ class Driver:
             raise NoSuchElementException(f"Driver.fill_element: Error: Unable to locate element '{selector}'")
 
     async def fill_elements(self, class_name, data_):
+        # function for filling elements by [class_name] with [data_]
+        # raise an exception [NoSuchElementException] if element is not found
         input_fields = await self.session.get_elements(class_name)
         if len(input_fields) == 0:
             raise NoSuchElementException(f"Driver.fill_elements: Error: Unable to locate element '{class_name}'")
@@ -57,6 +72,8 @@ class Driver:
             await input_field.send_keys(field_value)
 
     async def open_browser_for_sign_in(self, username, password):
+        # function for opening browser for sign in with [username] and [password]
+        # raise an exception [SigninError] if sign in is not successful
         try:
             async with (get_session(services.Geckodriver(binary=self.geckodriver), browsers.Firefox()) as self.session):
                 await self.session.get('http://cappa.csu.ru/')
@@ -69,6 +86,8 @@ class Driver:
             raise SigninError(e_)
 
     async def open_browser_for_cr(self, data_):
+        # function for opening browser for creating new account with [data_]
+        # raise an exception [RegistrationError] if registration is not successful
         try:
             async with (get_session(services.Geckodriver(binary=self.geckodriver), browsers.Firefox()) as self.session):
                 await self.session.get('http://cappa.csu.ru/')
