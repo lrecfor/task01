@@ -81,7 +81,6 @@ class Driver:
                 await self.fill_element('#id_login', username)
                 await self.fill_element('#id_password', password)
                 await self.click_element('.btn')
-
         except Exception as e_:
             raise SigninError(e_)
 
