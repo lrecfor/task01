@@ -5,19 +5,11 @@ import config
 from database import SessionManager
 from models import Reg, Auth
 from sqlalchemy import Integer, cast, select
-import logging
-import os
 import models
 
 storage = MemoryStorage()
 bot = Bot(token=config.N_TOKEN)
 dp = Dispatcher(bot, storage=storage)
-os.makedirs('logs', exist_ok=True)
-logging.basicConfig(filename=config.LOGPATH + config.N_LOGNAME,
-                    format='%(asctime)s - %(levelname)s - %(message)s',
-                    datefmt='%d-%b-%y %H:%M:%S',
-                    filemode='a',
-                    level=logging.ERROR)
 dp.middleware.setup(LoggingMiddleware())
 
 

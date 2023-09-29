@@ -7,9 +7,7 @@ import database as db
 from models import Reg, Auth
 from datetime import datetime
 from cryptography.fernet import Fernet
-import logging
 import config
-import os
 from driver import Driver
 
 fernet = Fernet(config.KEY)
@@ -17,12 +15,6 @@ fernet = Fernet(config.KEY)
 storage = MemoryStorage()
 bot = Bot(token=config.TOKEN)
 dp = Dispatcher(bot, storage=storage)
-os.makedirs('logs', exist_ok=True)
-logging.basicConfig(filename=config.LOGPATH + config.LOGNAME,
-                    format='%(asctime)s - %(levelname)s - %(message)s',
-                    datefmt='%d-%b-%y %H:%M:%S',
-                    filemode='a',
-                    level=logging.ERROR)
 dp.middleware.setup(LoggingMiddleware())
 
 
