@@ -2,16 +2,14 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
-from selenium.common import NoSuchElementException
 from utils import RegisterState, SigninState
-from database import Database, Reg, Auth
+import database as db
+from models import Reg, Auth
 from datetime import datetime
 from cryptography.fernet import Fernet
-import time
 import logging
 import config
 import os
-import asyncio
 from driver import Driver
 
 fernet = Fernet(config.KEY)
@@ -26,8 +24,6 @@ logging.basicConfig(filename=config.LOGPATH + config.LOGNAME,
                     filemode='a',
                     level=logging.ERROR)
 dp.middleware.setup(LoggingMiddleware())
-
-db = Database()
 
 
 @dp.message_handler(commands=['start'])
@@ -60,19 +56,21 @@ async def sign_in(message: types.Message, state: FSMContext):
     username = None
     password = None
     try:
-        user_data = db.get(data["username"])
+        user_data = await db.get(data["username"])
         username = user_data.username
         password = fernet.decrypt(user_data.password).decode('utf-8')
-    except Exception:
+        print()
+    except Exception as e:
         await message.answer("Account was not found. Check your login and try again or create an account.")
         await state.finish()
         return
     try:
         driver = Driver()
         await driver.open_browser_for_sign_in(username, password)
-        db.add(Auth(user_id=user_data.id, authorization_time=datetime.now()))
+        await db.add(Auth(user_id=user_data.id, authorization_time=datetime.now()))
         await message.answer("You signed in successfully.")
-    except Exception:
+    except Exception as e:
+        print(e)
         await message.answer("Something was wrong. Please try again later.")
 
     await state.finish()
@@ -132,7 +130,7 @@ async def create_acc(message: types.Message, state: FSMContext):
     try:
         await driver.open_browser_for_cr(data)
         password = fernet.encrypt(data["password1"].encode('utf-8')).decode('utf-8')
-        db.add(Reg(username=data['username'], password=password, registration_time=datetime.now()))
+        await db.add(Reg(username=data['username'], password=password, registration_time=datetime.now()))
         await message.answer(f"Account {data['username']} was created successfully")
     except Exception as e:
         await message.answer("Something was wrong. Please try again.")
@@ -141,6 +139,3 @@ async def create_acc(message: types.Message, state: FSMContext):
 
 def execute():
     executor.start_polling(dp, skip_updates=True)
-
-
-execute()
