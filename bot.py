@@ -135,7 +135,3 @@ async def create_acc(message: types.Message, state: FSMContext):
     except Exception as e:
         await message.answer("Something was wrong. Please try again.")
     await state.finish()
-
-
-def execute():
-    executor.start_polling(dp, skip_updates=True)

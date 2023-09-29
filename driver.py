@@ -1,4 +1,3 @@
-import asyncio
 import sys
 from arsenic import get_session, keys, browsers, services
 

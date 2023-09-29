@@ -51,10 +51,3 @@ async def start(message: types.Message):
                                          + '\nauthorization_time: ' + data.authorization_time)
     except Exception as e:
         await message.answer("Something was wrong. Bot stopped working.")
-
-
-def execute():
-    executor.start_polling(dp, skip_updates=True)
-
-
-execute()
