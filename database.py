@@ -1,68 +1,60 @@
-from sqlalchemy import create_engine
-from sqlalchemy_utils import database_exists, create_database
-from sqlalchemy import MetaData, Table, Column, Integer, String, ForeignKey
-from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy import select, cast, String
+from sqlalchemy.orm import declarative_base
+from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
+from contextlib import asynccontextmanager
 import config
-import psycopg2
-
-base = declarative_base()
-
-
-class Reg(base):
-    __tablename__ = "reg_info"
-    id = Column(Integer(), primary_key=True, autoincrement=True)
-    username = Column(String(), nullable=False)
-    password = Column(String(), nullable=False)
-    registration_time = Column(String(), nullable=False)
+import models
+from asyncpg import Connection
+from uuid import uuid4
 
 
-class Auth(base):
-    __tablename__ = "auth_info"
-    id = Column(Integer(), primary_key=True, autoincrement=True)
-    user_id = Column(Integer(), ForeignKey("reg_info.id"), primary_key=True)
-    authorization_time = Column(String(), nullable=False)
+Base = declarative_base()
 
 
-class Database:
-    def __init__(self):
-        self.url = config.DATABASE_URL
-        self.engine = create_engine(self.url, echo=True)
+class CConnection(Connection):
+    def _get_unique_id(self, prefix: str) -> str:
+        return f'__asyncpg_{prefix}_{uuid4()}__'
 
-        if not database_exists(self.url):
-            create_database(self.url)
 
-        metadata = MetaData()
-        # table for registration info
-        reg_table = Table('reg_info', metadata,
-                          Column('id', Integer(), primary_key=True),
-                          Column('username', String(), nullable=False),
-                          Column('password', String(), nullable=False),
-                          Column('registration_time', String(), nullable=False)
-                          )
+engine = create_async_engine(config.DATABASE_URL, echo=False, future=True, pool_size=50, connect_args={
+    "statement_cache_size": 0,
+    "prepared_statement_cache_size": 0,
+    "connection_class": CConnection,
+})
 
-        # table for authentication info
-        auth_table = Table('auth_info', metadata,
-                           Column('id', Integer(), primary_key=True),
-                           Column('user_id', String(), nullable=False),
-                           Column('authorization_time', String(), nullable=False),
-                           )
-        metadata.create_all(self.engine)
 
-    def add(self, data):
-        # function for adding [data] to database
-        Session = sessionmaker(bind=self.engine)
-        session = Session()
-        session.add(data)
-        session.commit()
-        session.close()
+Session = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
 
-    def get(self, data):
-        # function for getting data from database by [data]
-        Session = sessionmaker(bind=self.engine)
-        session = Session()
-        res = session.query(Reg).filter_by(username=data).first()
-        if res:
-            session.close()
-        else:
-            res = None
-        return res
+
+@asynccontextmanager
+async def SessionManager() -> Session:
+    async with Session() as db:
+        try:
+            yield db
+        except:
+            await db.rollback()
+            raise
+        finally:
+            await db.close()
+
+
+async def add(data):
+    # function for adding [data] to database
+    try:
+        async with SessionManager() as session:
+            session.add(data)
+            await session.commit()
+    except Exception as e:
+        raise
+
+
+async def get(data):
+    # function for getting data from database by [data]
+    try:
+        async with SessionManager() as session:
+            stmt = select(models.Reg).filter(cast(models.Reg.username, String) == data)
+            result = (await session.execute(stmt)).scalars().first()
+            await session.close()
+        return result
+    except Exception as e:
+        raise
